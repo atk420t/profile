@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+/* =========================
+LANDING PAGE STYLES
+========================= */
+
+#content.lp-wrap {
+	margin-top: 2.5em;
+	margin-bottom: 3em;
+	width: 100%;
+}
+
+#content.lp-wrap .hentry header {
+	padding: 2em;
+	text-align: center;
+}
+
+#content.lp-wrap .hentry header .page-title {
+	font-size: 2.8em;
+}
+
+.lp-containar {
+	max-width: 1400px;
+	margin: 0 auto;
+	background: #fff;
+	box-shadow: 0 0 1px #ccc;
+}
+
+.lp-containar #inner-content {
+	padding: 0;
+	box-shadow: none;
+	padding: 1em;
+}
+
+.lp-containar #main {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	float: none;
+}
+
+.lp-containar .eyecatch.lp {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+.lp-containar .catchcopy {
+	text-align: center;
+	margin: 1.5em 0.3em;
+	padding: 0;
+	font-size: 2em;
+	background: none;
+}
+
+#content.lp-wrap h2 {
+	font-size: 1.5em;
+	margin-top: 2em;
+}
+
+#content.lp-wrap h3 {
+	font-size: 1.5em;
+	margin-top: 2em;
+	padding-left: 0;
+	padding-right: 0;
+	border: none;
+}
+
+#content.lp-wrap h4 {
+	font-size: 1.2em;
+	margin-top: 2em;
+}
+
+#content.lp-wrap blockquote {
+	font-style: italic;
+}
+
+@media only screen and (max-width: 767px) {
+	.lp-containar .catchcopy {
+		font-size: 1.8em;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.lp-containar .catchcopy {
+		font-size: 1.4em;
+	}
+}
+
+@media only screen and (min-width: 1100px) {
+	.lp-wrap #main {
+		width: 100%;
+	}
+	.lp-wrap .entry-content {
+		padding: 1em 1em 4em;
+	}
+}

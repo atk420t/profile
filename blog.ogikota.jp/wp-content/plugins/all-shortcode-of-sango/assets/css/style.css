@@ -1,0 +1,546 @@
+.sango-modal-box{
+	position:relative;
+}
+.sango-modal-box #insert-sango-shortcode{
+	display: none;
+}
+.sango-modal{
+	display: none;
+	position: fixed;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    z-index: 160000;
+}
+.sango-modal-close{
+	position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent;
+    background: 0 0;
+    color: #666;
+    z-index: 1000;
+    cursor: pointer;
+    outline: 0;
+}
+
+.sango-modal-close .sango-modal-icon:before {
+    content: "\f158";
+    font: 400 20px/1 dashicons;
+    speak: none;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.sango-modal-close:active, .sango-modal-close:hover {
+    color: #00a0d2;
+}
+.sango-modal-close:active{
+	border-color: #00a0d2;
+}
+
+.sango-modal-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    min-height: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.7);
+    background: #fcfcfc;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.sango-modal * {
+    box-sizing: content-box;
+}
+
+.sango-left-menu{
+	width: 200px;
+    z-index: 150;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.sango-menu{
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 10px 0;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #ccc;
+    user-select: none;
+    top: 0;
+    background: #f3f3f3;
+    right: 0;
+}
+
+.sango-menu>a,.sango-router>a {
+    display: block;
+    position: relative;
+    padding: 8px 20px;
+    margin: 0;
+    color: #0073aa;
+    line-height: 18px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.sango-menu .active, .sango-menu .active:hover {
+    color: #23282d;
+    font-weight: 600;
+}
+
+.sango-frame-router, .sango-frame-title {
+    top: 0;
+    height: 50px;
+    position: absolute;
+    left: 200px;
+    right: 0;
+    z-index: 200;
+}
+
+.sango-frame-title h1 {
+    padding: 0 16px;
+    font-size: 22px;
+    line-height: 50px;
+    margin: 0;
+}
+
+.sango-frame-router{
+    top: 50px;
+    height: 36px;
+}
+
+.sango-router {
+    position: relative;
+    padding: 0 6px;
+    margin: 0;
+    clear: both;
+    user-select: none;
+}
+
+.sango-router>a {
+    position: relative;
+    float: left;
+    padding: 8px 10px 9px;
+    margin: 0;
+    height: 18px;
+    border-bottom: none;
+    color: #0073aa;
+}
+
+.sango-router .active, .sango-router .active:hover {
+    color: #32373c;
+}
+
+.sango-router .active, .sango-router>a.active:last-child {
+    margin: -1px -1px 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-bottom: none;
+}
+
+.sango-frame-content {
+    top: 84px;
+    bottom: 61px;
+    width: auto;
+    margin: 0;
+    overflow: auto;
+    background: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.sango-frame-content, .sango-frame-toolbar {
+    left: 200px;
+    height: auto;
+    position: absolute;
+    right: 0;
+}
+
+.sango-frame-toolbar {
+    z-index: 100;
+    bottom: 60px;
+}
+
+.sango-frame-content, .sango-frame-toolbar {
+    left: 200px;
+    height: auto;
+    position: absolute;
+    right: 0;
+}
+
+.sango-frame-toolbar .sango-toolbar {
+    top: initial;
+    bottom: -45px;
+    height: auto;
+    overflow: initial;
+    border-top: 1px solid #ddd;
+}
+
+.sango-toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 60px;
+    padding: 0 16px;
+    border: 0 solid #ddd;
+    overflow: hidden;
+}
+
+.sango-toolbar-primary {
+    float: right;
+    height: 100%;
+}
+
+.sango-modal-content .sango-toolbar-primary .sango-button {
+    float: right;
+}
+
+.sango-toolbar-primary>.sango-button{
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.sango-modal-backdrop {
+	display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 360px;
+    background: #000;
+    opacity: .7;
+    z-index: 159900;
+}
+
+.sango-frame-content > div > div{
+	padding: 10px 15px;
+}
+
+.sango-create,.sango-preview{
+	display: none;
+	position: relative;
+}
+.sango-preview img{ 
+	height: auto;
+}
+.sango-short-code{
+	font-weight: bold;
+	position: absolute;
+	top: 10px;
+    right: 10px;
+}
+.accordion .sango-create{
+	display: block;
+}
+
+.sango-create h2{
+	margin-bottom:5px;
+}
+
+
+
+/*アコーディオン*/
+.title-box{
+	margin-bottom: 30px;
+}
+
+#accordion-hidden-content_ifr{
+	height: 270px!important;
+}
+.accordion-hidden-content{
+	height: 320px!important;
+}
+.commmon-btn{
+	margin-top:10px!important;
+	float:right;
+}
+.accordion_input{
+	display: none!important;
+}
+/*アコーディオン*/
+
+/*タイムライン*/
+.timeline .sango-short-code{
+	display: none;
+}
+#timeline-content_ifr ,#review-content_ifr{
+	height: 270px!important;
+}
+.timeline-content,.review-content{
+	height: 320px!important;
+}
+/*タイムライン*/
+
+/*関連記事*/
+.sango-radio label{
+	margin-right: 5px;
+}
+.related-select-type{
+	margin-bottom:10px;
+}
+.list-or-search-post{
+	display: flex;
+}
+.list-or-search-post > div{
+	width: 400px;
+}
+.related-post-list,.search-post-list{
+	height: 45vh;
+    overflow: scroll;
+}
+.related-post-list>div,.search-post-list>div{
+	display: flex;
+	width: 97%;
+    border: 1px solid #ccc;
+    padding: 1%;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+.related-post-list>div.active,.related-post-list>div:hover,.search-post-list>div.active,.search-post-list>div:hover{
+	background: lightyellow;
+}
+.related-post-left{
+	width: 30%;
+}
+.related-post-left img{
+	width: 100%;
+}
+.related-post-right{
+	width: 68%;
+	margin-left: 2%;
+}
+.search-post-list-box{
+	position: relative;
+	margin-left: 30px;
+}
+.search-post-list-box h2{
+	margin-top: 0;
+}
+.sango-search-form{
+	position: absolute;
+    right: 0;
+    top: -18%;
+}
+.sango-search-result{
+	height: 390px;
+    overflow: scroll;
+}
+.search-post-list-box img.loading{
+	position: absolute;
+	width: 30%;
+	top: 30%;
+	left: 40%;
+	display: none;
+}
+.sango-post-url,.sango-post-id{
+	display: none;
+}
+/*関連記事*/
+
+/*線・点線*/
+.sango-preview hr {
+ margin: 3em 0;
+ border: solid 3px #dadada;
+ border-width: 2px 0 0 0;
+}
+.sango-preview hr.dotted {
+ border-top: dotted 2px #dadada;
+} 
+/*線・点線*/
+
+/*補足・注意書き、ソースコードボックス*/
+.source-code-box .sango-short-code{
+	display: none;
+}
+.hosoku-desc input,.sango-attention input,.source-code-box input,.embed-youtube input{
+	width: 200px;
+}
+.hosoku-desc textarea,.sango-attention textarea,.source-code-box textarea{
+	width: 300px;
+    height: 100px;
+}
+
+.source-code-box code{
+ padding: .2em .3em;
+ border-radius: 5px;
+ background: #f3f6fc;
+ font-size: .9em;
+}
+.source-code-box pre {
+ margin: 0 0 1.5em;
+ padding: 1em;
+ border: solid 1px #eaedf2;
+ background: #f3f6fc;
+ color: #54687c;
+}
+.source-code-box pre code {
+ padding: 0;
+ background: transparent;
+}
+.pre_tag > span{
+	background-color: #6bb6ff;
+}
+/*補足・注意書き、ソースコードボックス*/
+
+/*吹き出し・画像上文字*/
+.balloon .sango-short-code,.string-on-image .sango-short-code{
+	display: none;
+}
+.balloon-media,.string-on-image-media{
+	width: 75px;
+	margin-top: 10px;
+}
+.balloon-media img,.string-on-image-media img{
+	width: 100%;
+}
+.balloon #balloon-name,.string-on-image input{
+	width: 200px;
+}
+.balloon textarea{
+	width: 300px;
+    height: 100px;
+}
+.balloon .balloon-btn-box{
+	width: 300px;
+	text-align: right;
+	margin-top: 15px;
+}
+.string-on-image .string-on-image-btn-box{
+	width: 200px;
+	margin-top: 15px;
+}
+/*吹き出し・画像上文字*/
+
+/*横並び*/
+.float2 .sango-short-code,.float3 .sango-short-code{
+	display: none;
+}
+#float2-content_ifr,#float3-content_ifr{
+	height: 270px!important;
+}
+.float2-content,.float3-content{
+	height: 320px!important;
+}
+/*横並び*/
+
+/*表示分岐*/
+#show-branch-content_ifr{
+	height: 270px!important;
+}
+.show-branch-content{
+	height: 320px!important;
+}
+/*表示分岐*/
+
+/*カテゴリー*/
+.category .commmon-btn,.tag .commmon-btn ,.new-post .commmon-btn{
+	float: none;
+	margin-top: unset!important;
+}
+/*カテゴリー*/
+
+/*レビューボックス*/
+.review-box .sango-short-code{
+	display: none;
+}
+/*レビューボックス*/
+
+/*ボタン・ボックス*/
+.sango-button .sango-short-code,.box .sango-short-code{
+    display: none;
+}
+.sango-button .back-btn,.sango-button .preview-box,.box .back-btn,.box .preview-box{
+    display: none;
+}
+.btn-list,.box-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn-list>div{
+    width: 23%;
+    margin-right: 2%;
+}
+.box-list>div{
+    width: 48%;
+    margin-right: 2%;
+}
+.sango-button .btn {
+  margin: .5em .5em .5em 0;
+  text-decoration: none;
+}
+.sango-button a.btn:hover {
+ text-decoration: none;
+}
+.sango-button .blue-bc {
+ background: #4f9df4;
+}
+.sango-button .red-bc {
+ background: #f88080;
+}
+.sango-button .green-bc {
+ background: #90d581;
+}
+.cubic1.text3d.red-bc:hover{
+    color:#f88080;
+}
+.cubic1.text3d.blue-bc:hover{
+    color:#4f9df4;
+}
+.cubic1.text3d.green-bc:hover{
+    color:#90d581;
+}
+.raised {
+    display: inline-block;
+    margin: .5em 0;
+    padding: .4em 1.3em;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.2), 0 2px 3px -2px rgba(0,0,0,.15);
+    color: #fff;
+    text-decoration: none;
+    vertical-align: middle;
+    transition: .3s ease-in-out;
+}
+.raised:hover,
+.raised:focus {
+    color:#fff; 
+    box-shadow: 0 13px 20px -3px rgba(0,0,0,.24);
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.flat7:hover{
+    color: #67c5ff;
+}
+.flat11:hover{
+    color: #668ad8;
+}
+.flat8:hover,.flat9:hover,.grad1:hover,.grad2:hover,.grad3:hover,.grad4:hover,.cubic1:hover,.cubic2:hover,.cubic3:hover{
+    color: white;
+}
+.preview-box .emboss {
+ text-shadow: 1.5px 1.5px 1.5px rgba(255, 255, 255, .5);
+ color: rgba(0, 0, 0, .4);
+ font-weight: bold;
+}
+.btn.btntext{
+    background-color: transparent;
+}
+.btn.btntext:hover {
+    background: #efefef;
+}
+/*ボタン・ボックス*/

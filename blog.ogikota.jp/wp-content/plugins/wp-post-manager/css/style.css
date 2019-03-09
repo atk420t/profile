@@ -1,0 +1,341 @@
+@charset "UTF-8";
+
+.container-fluid {
+  clear: left;
+}
+
+/*全体*/
+.container-fluid.bottom{
+  margin-right:10px;
+}
+
+/*カラム*/
+.col-sm-7{
+  border:2px solid #ccc;
+  border-radius:4px;
+  padding:5px;
+  overflow: hidden;
+}
+.col-sm-4{
+  padding: 10px;
+  margin-left: 20px;
+}
+.col-sm-5{
+  padding:5px;
+}
+.col-sm-12{
+  border:2px solid #ccc;
+  border-radius:4px;
+  padding:5px;
+}
+.tab-pane-content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.ranking-flex,.cv-button-flex,.text-flex{
+  width:50%;
+  padding:20px;
+  border: solid 1px #ccc;
+}
+.h1{
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.h2{
+  color: #039BE5;
+  background: #EAF6FD;
+  border-top: 2px solid #039BE5;
+  border-bottom: 1px solid #039BE5;
+  padding:10px 20px;
+  font-size: 27px;
+  line-height: 32px;
+}
+.history-none{
+  width:100%;
+}
+.h3{
+  border-bottom: solid #039BE5 3px;
+  padding: 5px;
+  font-size: 22px;
+  margin-top: 10px;
+}
+#c-side, #r-side, #t-side, #cv-button-side, #text-link-side{
+  position: fixed;
+  overflow: hidden;
+}
+.right-col-box{
+  position: fixed;
+}
+.left-middle-col-box{
+  display: flex;
+}
+.left-left-col-box,.left-right-col-box{
+  width: 50%;
+  float:left;
+}
+.left-right-col-box h2{
+  border-left: 1px solid;
+}
+.profile-box{
+  width:350px;
+  overflow-x: auto;
+}
+.profile-img{
+  width:170px;
+  height: 170px;
+  float:left;
+}
+.age,.to-live{
+  float:left;
+  margin-left: 20px;
+}
+.interestingly-box{
+  width:350px;
+  overflow-x: auto;
+}
+.interestingly{
+  clear:left;
+}
+.interestingly-list{
+  margin-top:15px; 
+  list-style-type:disc;
+  margin:20px;
+}
+.interestingly-list li{
+  margin-left: 20px;
+}
+.contact-box{
+  width:260px;
+  overflow-x: auto;
+}
+.contact{
+  clear: right;
+}
+.contact-list{
+  margin:20px;
+  list-style-type:disc;
+}
+.contact-list li{
+  margin-left: 20px;
+}
+.site{
+  display: inline-block;
+}
+
+/*ボタン*/
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.btn-default-ori{
+  color: #fff;
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid;
+  margin-bottom:5px;
+  transition: 0.3s;
+  box-shadow:5px 5px 10px;
+}
+.btn-primary{
+  background-color: #008cba;
+  border-color: #008cba;
+  border-radius: 5px;
+  margin-top:5px;
+  color: white;
+  transition: 0.3s;
+  box-shadow:5px 5px 10px;
+}
+.btn-primary:hover,.btn-default-ori:hover{
+  opacity: 0.5;
+  transform: translate3d(0px, 2px, 1px);
+  -webkit-transform: translate3d(0px, 2px, 1px);
+  -moz-transform: translate3d(0px, 2px, 1px);
+  box-shadow: none;
+}
+
+.media-upload-box{
+  display: flex;
+  flex-wrap: wrap;
+  display: none;
+}
+.media-box{
+  margin:20px 20px 15px 0;
+}
+.choose{
+  margin:0 10px !important;
+}
+.media1,.media2,.media3{
+  margin-top: 10px;
+}
+
+.animation-left-or-right, .cv-button-animation-type, .cv-button-left-color-form, .cv-button-right-color-form, .overall-animation-type, .banner-animation-type, .text-or-cv-button-animation-type, .cv-button-right-animation-type, .cv-button-left-animation-type, .animation-start, .ranking-cv-button-type-form, .ranking-cv-button-large-color-form, .ranking-cv-button-left-color-form, .ranking-cv-button-right-color-form, .ranking-cv-button-large-text-form, .ranking-cv-button-right-animation-type, .ranking-cv-button-left-animation-type{
+  display:none;
+}
+
+/*CVボタンオプション*/
+.cv-button.shiny.preview{
+  margin:30px 0;
+}
+.cv-button.shiny.preview-box{
+  width:87%;
+}
+
+/*CVボタンページ*/
+.cv-button-large-edit{
+  height:40px;
+}
+.cv-button-large-edit-area, .large-edit, .left-edit, .right-edit{
+  margin:20px 0;
+}
+.cv-button-preview-box{
+  position: fixed;
+  width: 41.66666667%;
+}
+.cv-button-double-edit-area{
+  display:none;
+}
+.cv-button.shiny.preview-box, .cv-button-02-preview-box{
+  width:87%;
+}
+
+
+/*form関連*/
+.form-control {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.form-control::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #999;
+}
+.form-control::-webkit-input-placeholder {
+  color: #999;
+}
+.form-control::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  background-color: #eee;
+  opacity: 1;
+}
+.form-control[disabled],
+fieldset[disabled] .form-control {
+  cursor: not-allowed;
+}
+
+#footer{
+  text-align: center;
+  margin-top: 10px;
+  clear: left;
+}
+
+.history-delete{
+    position: fixed;
+    right: 5px;
+    z-index: 999;
+}
+
+.extensions{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:30px;
+}
+
+.extensions > div{
+  width:45%;
+  overflow: hidden;
+}
+.cv-button-set{
+  margin-left:1.5%;
+}
+.extensions > div > img{
+  width:50%;
+  height: auto;
+  float: left;
+}
+.extensions > div > div{
+  width:45%;
+  float:left;
+  margin-left:5%;
+}
+.extensions > div > div >p{
+  font-size: 21px;
+}
+.buy-button{
+  width: 100%!important;
+  float: none!important;
+  overflow: hidden;
+}
+
+/* タイプライター */
+.few {
+  font-size: 36px;
+  line-height: 1.3;
+  letter-spacing: 5px;
+  word-break: break-all;
+  color: #000000;
+}
+.few {
+  opacity: 0;
+}
+.few span {
+  display: none;
+  float: left;
+}
+.few span.cur {
+  display: block;
+}

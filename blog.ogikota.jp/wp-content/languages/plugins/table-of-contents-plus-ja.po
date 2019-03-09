@@ -1,0 +1,472 @@
+# Translation of Plugins - Table of Contents Plus - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - Table of Contents Plus - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-12-17 08:30:51+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.3.0-alpha\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - Table of Contents Plus - Stable (latest release)\n"
+
+#. Author URI of the plugin/theme
+msgid "http://dublue.com/"
+msgstr "http://dublue.com/"
+
+#. Author of the plugin/theme
+msgid "Michael Tran"
+msgstr "Michael Tran"
+
+#. Description of the plugin/theme
+msgid "A powerful yet user friendly plugin that automatically creates a table of contents. Can also output a sitemap listing all pages and categories."
+msgstr "自動的に目次を生成するパワフルかつユーザーフレンドリーなプラグイン。すべてのページとカテゴリーをリスティングするサイトマップも出力できます。"
+
+#. Plugin URI of the plugin/theme
+msgid "http://dublue.com/plugins/toc/"
+msgstr "http://dublue.com/plugins/toc/"
+
+#. Plugin Name of the plugin/theme
+msgid "Table of Contents Plus"
+msgstr "Table of Contents Plus"
+
+#: toc.php:1688
+msgid "For the following content types:"
+msgstr "以下の投稿タイプで:"
+
+#: toc.php:1684
+msgid "Show the table of contents only in the sidebar"
+msgstr "目次をサイドバーのみに表示"
+
+#: toc.php:1584
+msgid "Display the table of contents in the sidebar with this widget"
+msgstr "このウィジェットを使って目次をサイドバーに表示"
+
+#: toc.php:1078
+msgid "Update Options"
+msgstr "設定を更新"
+
+#: toc.php:1069
+msgid "Uses h6 to display %s on a page listing excluding pages with IDs 1 and 15"
+msgstr "h6でマークアップし、ID1と15のページを除外。ラベルを%sとする"
+
+#: toc.php:1068
+msgid "hides the heading from a category listing"
+msgstr "ラベルを非表示にする"
+
+#: toc.php:1066
+msgid "Examples"
+msgstr "例"
+
+#: toc.php:1065
+msgid "lets you print out a listing of only pages. Similarly %s can be used to print out a category listing. They both can accept a number of attributes so visit the help tab for more information."
+msgstr "固定ページのみのサイトマップを生成できます。同様に%sでカテゴリページのみのサイトマップを生成できます。また、引数を与えて細かい設定ができます。"
+
+#: toc.php:1063
+msgid "Advanced usage"
+msgstr "上級者向け"
+
+#: toc.php:1057
+msgid "Eg: Categories, Category List"
+msgstr "例: カテゴリー、カテゴリー一覧"
+
+#: toc.php:1055
+msgid "Categories label"
+msgstr "カテゴリページのラベル"
+
+#: toc.php:1051
+msgid "Eg: Pages, Page List"
+msgstr "例: ページ、ページ一覧"
+
+#: toc.php:1049
+msgid "Pages label"
+msgstr "固定ページのラベル"
+
+#. translators: the full line is supposed to read - Use [h1-h6 drop down list]
+#. to print out the titles
+#: toc.php:1045
+msgid "to print out the titles"
+msgstr "としてマークアップする"
+
+#. translators: the full line is supposed to read - Use [1-6 drop down list] to
+#. print out the titles
+#: toc.php:1034
+msgid "Use"
+msgstr "見出しは"
+
+#: toc.php:1031
+msgid "Heading type"
+msgstr "見出し"
+
+#: toc.php:1027
+msgid "Show category listing"
+msgstr "カテゴリリストを表示"
+
+#: toc.php:1023
+msgid "Show page listing"
+msgstr "固定ページリストを表示"
+
+#: toc.php:1019
+msgid "At its simplest, placing %s into a page will automatically create a sitemap of all pages and categories. This also works in a text widget."
+msgstr "簡単に言うと、ページに%sのを配置すると、自動的にすべてのページとカテゴリのサイトマップを作成します。また、これはテキストウィジェットで動作します。"
+
+#: toc.php:1011
+msgid "If you would like to fully customise the position of the table of contents, you can use the %s shortcode by placing it at the desired position of your post, page or custom post type. This method allows you to generate the table of contents despite having auto insertion disabled for its content type. Please visit the help tab for further information about this shortcode."
+msgstr "あなたは完全に内容のテーブルの位置をカスタマイズしたい場合は、あなたの投稿、ページまたはカスタムポストタイプの所望の位置にそれを配置することによって、%sショートコードを使用することができます。この方法では、そのコンテンツタイプに対して無効に自動挿入を持つにもかかわらず、コンテンツのテーブルを生成することができます。このショートの詳細は、 [ヘルプ]タブをご覧ください。"
+
+#. translators: advanced usage
+#: toc.php:1010
+msgid "Usage"
+msgstr "使い方"
+
+#. translators: example anchor prefixes when no ascii characters match
+#: toc.php:1002
+msgid "Eg: i, toc_index, index, _"
+msgstr "例: i、toc_index、index、_"
+
+#: toc.php:999
+msgid "This option normally applies to content written in character sets other than ASCII."
+msgstr "このオプションは通常の文字で書かれた内容は、ASCII以外の設定に適用されます。"
+
+#: toc.php:998
+msgid "Anchor targets are restricted to alphanumeric characters as per HTML specification (see readme for more detail). The default anchor prefix will be used when no characters qualify. When left blank, a number will be used instead."
+msgstr "アンカーターゲットはHTML仕様（詳細についてはREADMEを参照）に従って英数字に制限されています。何の文字が適格と、デフォルトのアンカーの接頭辞が使用されます。空白のままにすると、番号が代わりに使用されます。"
+
+#: toc.php:995
+msgid "Default anchor prefix"
+msgstr "アンカーのデフォルト接頭辞"
+
+#. translators: example URL path restriction
+#: toc.php:991
+msgid "Eg: /wiki/, /corporate/annual-reports/"
+msgstr "例: /wiki/ 、/corporate/annual-reports/"
+
+#: toc.php:988
+msgid "Restrict generation of the table of contents to pages that match the required path. This path is from the root of your site and always begins with a forward slash."
+msgstr "特定のページのみで表示させたい場合、カンマ（,）区切りでスラッシュ（/）からはじまるパスを設定してください。"
+
+#: toc.php:985
+msgid "Restrict path"
+msgstr "パス限定"
+
+#: toc.php:981
+msgid "If you have a consistent menu across the top of your site, you can adjust the top offset to stop the headings from appearing underneath the top menu. A setting of 30 accommodates the WordPress admin bar. This setting appears after you have enabled smooth scrolling from above."
+msgstr "あなたのサイトに画面固定ヘッダーがある場合、スムースクロールの目的地がカブらないように上部オフセットを調整することができます。 30の設定は、 WordPressの管理バーに対応しています。上のほうの設定でスムーズスクロールを有効にした後にこの設定が表示されます。"
+
+#: toc.php:978
+msgid "Smooth scroll top offset"
+msgstr "スムーズ・スクロール上部余白"
+
+#: toc.php:973
+msgid "<code>Apple Tree|Oranges|Yellow Bananas</code> ignore headings that are exactly \"Apple Tree\", \"Oranges\" or \"Yellow Bananas\""
+msgstr "<code>リンゴの木|オレンジ|黄色いバナナ</code> 「リンゴの木」、「オレンジ」、「黄色いバナナ」という見出しを無視する"
+
+#: toc.php:972
+msgid "<code>*Fruit Diet*</code> ignore headings with \"Fruit Diet\" somewhere in the heading"
+msgstr "<code>*果物ダイエット*</code> 「果物ダイエット」がどこかに含まれる見出しを無視する"
+
+#: toc.php:971
+msgid "<code>Fruit*</code> ignore headings starting with \"Fruit\""
+msgstr "<code>果物*</code> 「果物」から始まる見出しを無視する"
+
+#: toc.php:969
+msgid "Specify headings to be excluded from appearing in the table of contents.  Separate multiple headings with a pipe <code>|</code>.  Use an asterisk <code>*</code> as a wildcard to match other text.  Note that this is not case sensitive. Some examples:"
+msgstr "目次に表示しない見出しを指定します。複数の見出しをパイプ記号 (<code>|</code>) で区切ってください。他のテキストに一致させるには、アステリスク記号 (<code>*</code>) をワイルドカードとして使用してください。大文字と小文字は区別されません。例:"
+
+#: toc.php:966
+msgid "Exclude headings"
+msgstr "除外する見出し"
+
+#: toc.php:960
+msgid "heading "
+msgstr "見出し"
+
+#: toc.php:954
+msgid "Include the following heading levels. Deselecting a heading will exclude it."
+msgstr "以下の見出しレベルを含める。チェックを外すと非表示になります。"
+
+#: toc.php:952
+msgid "Heading levels"
+msgstr "見出しレベル"
+
+#: toc.php:949
+msgid "If your theme includes background images for unordered list elements, enable this to support them"
+msgstr "お使いのテーマで番号なしリスト要素に背景が含まれている場合、対応させるにはチェックを入れてください。"
+
+#: toc.php:948
+msgid "Preserve theme bullets"
+msgstr "テーマの見出し記号を保持"
+
+#: toc.php:945
+msgid "Prevent the loading of this plugin's CSS styles. When selected, the appearance options from above will also be ignored."
+msgstr "プラグインの CSS スタイルを読み込まない場合はチェックを入れてください。選択した場合、上の外観設定も無視されます。"
+
+#: toc.php:944
+msgid "Exclude CSS file"
+msgstr "CSS ファイルを除外"
+
+#: toc.php:941
+msgid "Show the table of contents for qualifying items on the homepage"
+msgstr "ホームページ上の条件を満たす項目の目次を表示"
+
+#: toc.php:940
+msgid "Include homepage"
+msgstr "ホームページを含める"
+
+#: toc.php:937
+msgid "Use - rather than _ in anchors"
+msgstr "アンカーでアンダースコアではなくハイフンを使用"
+
+#: toc.php:936
+msgid "Hyphenate"
+msgstr "ハイフン"
+
+#: toc.php:933
+msgid "Ensure anchors are in lowercase"
+msgstr "アンカーに必ず小文字を使用"
+
+#: toc.php:932
+msgid "Lowercase"
+msgstr "小文字"
+
+#: toc.php:928
+msgid "Power options"
+msgstr "詳細設定"
+
+#: toc.php:926 toc.php:1063
+msgid "show"
+msgstr "表示"
+
+#: toc.php:926
+msgid "Advanced"
+msgstr "上級者向け"
+
+#: toc.php:919
+msgid "Leaving the value as %s will inherit your theme's styles"
+msgstr "値を %s のままにするとテーマのスタイルが継承されます"
+
+#: toc.php:912
+msgid "Links (visited)"
+msgstr "リンク (閲覧済み)"
+
+#: toc.php:908
+msgid "Links (hover)"
+msgstr "リンク (マウスオーバー)"
+
+#: toc.php:904
+msgid "Links"
+msgstr "リンク"
+
+#: toc.php:900 toc.php:1678
+msgid "Title"
+msgstr "タイトル"
+
+#: toc.php:896
+msgid "Border"
+msgstr "ボーダー"
+
+#: toc.php:892
+msgid "Background"
+msgstr "背景"
+
+#: toc.php:882
+msgid "Custom"
+msgstr "カスタム"
+
+#: toc.php:877
+msgid "Transparent"
+msgstr "透明"
+
+#: toc.php:872
+msgid "Black"
+msgstr "黒"
+
+#: toc.php:867
+msgid "White"
+msgstr "白"
+
+#: toc.php:862
+msgid "Light blue"
+msgstr "水色"
+
+#: toc.php:857
+msgid "Grey (default)"
+msgstr "グレー (デフォルト)"
+
+#. translators: appearance / colour / look and feel options
+#: toc.php:854
+msgid "Presentation"
+msgstr "プレゼンテーション"
+
+#: toc.php:841
+msgid "Font size"
+msgstr "文字サイズ"
+
+#: toc.php:836
+msgid "Right"
+msgstr "右"
+
+#: toc.php:835
+msgid "Left"
+msgstr "左"
+
+#: toc.php:834
+msgid "None (default)"
+msgstr "なし (デフォルト)"
+
+#: toc.php:831
+msgid "Wrapping"
+msgstr "回り込み"
+
+#. translators: ignore %s as it's some HTML label tags
+#: toc.php:820
+msgid "Please enter a number and %s select its units, eg: 100px, 10em"
+msgstr "数字を入力し、%s単位を選択してください。例: 100px、10em"
+
+#: toc.php:814
+msgid "User defined"
+msgstr "ユーザー指定"
+
+#. translators: other width
+#: toc.php:813
+msgid "Other"
+msgstr "その他"
+
+#: toc.php:803
+msgid "Auto (default)"
+msgstr "自動 (デフォルト)"
+
+#: toc.php:802
+msgid "Relative"
+msgstr "相対"
+
+#: toc.php:791
+msgid "Fixed width"
+msgstr "固定幅"
+
+#: toc.php:788
+msgid "Width"
+msgstr "横幅"
+
+#: toc.php:784
+msgid "Appearance"
+msgstr "外観"
+
+#: toc.php:779
+msgid "Scroll rather than jump to the anchor link"
+msgstr "アンカーリンクにジャンプではなくスクロールする"
+
+#: toc.php:778
+msgid "Enable smooth scroll effect"
+msgstr "スムーズ・スクロール効果を有効化"
+
+#: toc.php:774
+msgid "Number list items"
+msgstr "番号振り"
+
+#: toc.php:770
+msgid "Show hierarchy"
+msgstr "階層表示"
+
+#: toc.php:764
+msgid "Hide the table of contents initially"
+msgstr "最初は目次を非表示"
+
+#. translators: example text to display when you want to collapse the table of
+#. contents
+#: toc.php:760
+msgid "Eg: hide"
+msgstr "例: 非表示"
+
+#: toc.php:756
+msgid "Hide text"
+msgstr "テキストを非表示"
+
+#. translators: example text to display when you want to expand the table of
+#. contents
+#: toc.php:753
+msgid "Eg: show"
+msgstr "例: 表示"
+
+#: toc.php:749
+msgid "Show text"
+msgstr "テキストを表示"
+
+#: toc.php:744
+msgid "Allow the user to toggle the visibility of the table of contents"
+msgstr "ユーザーによる目次の表示・非表示を切り替えを許可"
+
+#: toc.php:742
+msgid "Eg: Contents, Table of Contents, Page Contents"
+msgstr "例: コンテンツ、目次、ページコンテンツ"
+
+#: toc.php:739
+msgid "Show title on top of the table of contents"
+msgstr "目次の上にタイトルを表示"
+
+#. translators: this is the title of the table of contents
+#: toc.php:737
+msgid "Heading text"
+msgstr "見出しテキスト"
+
+#: toc.php:722
+msgid "Auto insert for the following content types"
+msgstr "以下のコンテンツタイプを自動挿入"
+
+#. translators: text follows drop down list of numbers
+#: toc.php:718
+msgid "or more headings are present"
+msgstr "つ以上見出しがあるとき"
+
+#: toc.php:706
+msgid "Show when"
+msgstr "表示条件"
+
+#: toc.php:701
+msgid "Bottom"
+msgstr "下"
+
+#: toc.php:700
+msgid "Top"
+msgstr "上"
+
+#: toc.php:699
+msgid "After first heading"
+msgstr "最初の見出しの後"
+
+#: toc.php:698
+msgid "Before first heading (default)"
+msgstr "最初の見出しの前 (デフォルト)"
+
+#: toc.php:695
+msgid "Position"
+msgstr "位置"
+
+#: toc.php:687
+msgid "Help"
+msgstr "ヘルプ"
+
+#: toc.php:686
+msgid "Sitemap"
+msgstr "サイトマップ"
+
+#: toc.php:685
+msgid "Main Options"
+msgstr "基本設定"
+
+#: toc.php:673
+msgid "Save failed."
+msgstr "保存に失敗しました。"
+
+#: toc.php:671
+msgid "Options saved."
+msgstr "設定を保存しました。"
+
+#: toc.php:500 toc.php:501
+msgid "TOC"
+msgstr "TOC"
+
+#: toc.php:221
+msgid "Settings"
+msgstr "設定"
